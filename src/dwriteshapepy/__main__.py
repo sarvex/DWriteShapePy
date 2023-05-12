@@ -130,7 +130,7 @@ def main(args=None):
             indices = m[3]
             value = m[4]
             if indices:
-                if not tag in feature_dict:
+                if tag not in feature_dict:
                     feature_dict[tag] = []
                 l, r = re.match(r"^(\d+)?:?(\d+)?$", indices)
                 if value:
